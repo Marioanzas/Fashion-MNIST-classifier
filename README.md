@@ -11,16 +11,16 @@ Each image is 28 pixels in height and 28 pixels in width, for a total of 784 pix
 ### Labels
 Each training and test example is assigned to one of the following labels:
 
-0 T-shirt/top
-1 Trouser
-2 Pullover
-3 Dress
-4 Coat
-5 Sandal
-6 Shirt
-7 Sneaker
-8 Bag
-9 Ankle boot
+- 0 T-shirt/top
+- 1 Trouser
+- 2 Pullover
+- 3 Dress
+- 4 Coat
+- 5 Sandal
+- 6 Shirt
+- 7 Sneaker
+- 8 Bag
+- 9 Ankle boot
 
 ## Work done
 A neural network is proposed to classify the images of this dataset. The neural network is implemented using the PyTorch library, trained on the training data and validated on the testing data for 50 epochs. The neural network is a simple feedforward neural network with 3 hidden layers. The first hidden layer has 256 neurons, the second has 128 neurons and the third has 64 neurons. The activation function used is ReLU. The output layer has 10 neurons, one for each class. The loss function used is the cross-entropy loss function. The optimizer used is the Adam optimizer. The learning rate is 0.003. The neural network is trained on the training data and validated on the testing data for 50 epochs. The neural network achieves an accuracy of ~87% on the testing data. I also avoided overfitting through regularization, such as dropout while monitoring the validation performance during training. 
